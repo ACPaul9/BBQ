@@ -11,6 +11,35 @@
   </head>
 
   <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <%= link_to t('app.name'), root_path, class: 'navbar-brand' %>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <% if flash[:notice].present? %>
+      <div class="alert alert-success alert-dismissible fade show mt-4" role="alert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <%= flash[:notice] %>
+      </div>
+    <% elsif flash[:alert].present? %>
+      <div class="alert alert-danger alert-dismissible fade show mt-4" role="alert">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        <%= flash[:alert] %>
+      </div>
+    <% end %>
     <%= yield %>
+
+    <footer class="mt-5 text-center">
+      <p>&copy; <%= t 'app.company' %> 2022</p>
+    </footer>
+  </div>
   </body>
 </html>
