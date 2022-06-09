@@ -11,8 +11,8 @@
     <%= f.text_field :email, class: 'form-control' %>
   </div>
 
-  <div class="actions">
-    <%= f.submit 'Сохранить', class: 'btn btn-primary' %>
-    или <%= link_to 'вернуться', :back %>
+  <div class="actions d-flex flex-row align-items-center mt-4 mb-4">
+    <%= f.submit 'Save', class: 'btn btn-primary' %>
+    <%= link_to 'Back', :back, class: 'btn btn-outline-secondary ms-2' %>
   </div>
 <% end %>
