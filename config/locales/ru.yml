@@ -1,0 +1,85 @@
+ru:
+  activerecord:
+    models:
+      user: 'Пользователь'
+      event: 'Событие'
+    errors:
+      models:
+        subscription:
+          attributes:
+            user_email:
+              own_event: 'не может использоваться для подписки на это событие'
+              can_not_use: 'уже используется другим пользователем'
+
+    attributes:
+      user:
+        email: 'Email'
+        name: 'Имя'
+        avatar: 'Аватар'
+        password: 'Пароль'
+        password_confirmation: 'Подтверждение пароля'
+      event:
+        title: 'Название'
+        address: 'Место проведения'
+        datetime: 'Дата и время'
+        description: 'Описание'
+
+  controllers:
+    events:
+      created: 'Вы создали новое мероприятие'
+      updated: 'Вы обновили мероприятие'
+      destroyed: 'Вы удалили мероприятие :('
+    users:
+      updated: 'Вы обновили свой профиль'
+
+  app:
+    name: 'BBQ'
+    company: 'Руби'
+    profile: 'Профиль'
+    log_out: 'Выйти'
+    log_in: 'Войти'
+    sign_up: 'Зарегистрироваться'
+    back: 'Назад'
+    entrance: 'Вход'
+    save: 'Сохранить'
+    return: 'вернуться'
+    hello: 'Здравствуйте'
+
+  form:
+    has: 'В вашей форме'
+    errors:
+      one: '%{count} ошибка'
+      few: '%{count} ошибки'
+      many: '%{count} ошибок'
+
+  password:
+    forgot: 'Забыли пароль?'
+    reset_password_instructions: 'Отправить дальнейшие инструкции'
+    edit: 'Изменение пароля'
+    confirm_changes: 'Для подтверждения изменений'
+    update: 'Обновить'
+    cancel_account: 'Удалить аккаунт'
+    question: 'Вам не интересно?'
+    registration: 'Регистрация'
+    length: 'Не менее %{number} символов'
+    change: 'Сменить мой пароль'
+    link_request: 'Кто-то запросил ссылку для смены Вашего пароля. Вы можете сделать это по ссылке ниже.'
+    ignore_email: 'Если это были не Вы, пожалуйста, проигнорируйте данное письмо.'
+    change_terms: 'Ваш пароль не будет изменён до тех пор, пока Вы не пройдёте по ссылке выше и не создадите новый пароль.'
+
+  alert:
+    are_you_sure: 'Вы уверены?'
+
+  event:
+    edit: 'Редактирование события'
+    new: 'Новое событие'
+    index: 'События'
+    create: 'Создать событие'
+    update: 'Изменить'
+    destroy: 'Удалить'
+
+  user:
+    edit: 'Редактирование профиля'
+    update_profile: 'Редактировать профиль'
+    set: 'Организовал:'
+    no_events_set: 'Пользователь пока не организовал ни одного события'
