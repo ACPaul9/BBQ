@@ -1,10 +1,15 @@
 Rails.application.routes.draw do
+  resources :subscriptions
   devise_for :users
-  resources :users
-  # корень сайта
+
   root to: "events#index"
 
-  resources :events
-  resources :users, only: [:show, :edit, :update]
+  resources :events do
+    # Вложенный ресурс комментов
+    resources :comments, only: [:create, :destroy]
 
+    # вложенный ресурс подписок
+    resources :subscriptions, only: [:create, :destroy]
+  end
+  resources :users, only: [:show, :edit, :update]
 end
