@@ -3,6 +3,8 @@ ru:
     models:
       user: 'Пользователь'
       event: 'Событие'
+      subscription: 'Подписка'
+      comment: 'Комментарий'
     errors:
       models:
         subscription:
@@ -52,12 +54,6 @@ ru:
     save: 'Сохранить'
     return: 'вернуться'
     hello: 'Здравствуйте'
-  comments:
-    comment:
-    destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'
-  subscriptions:
-    subscription:
-      destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
 
   form:
     has: 'В вашей форме'
@@ -97,3 +93,18 @@ ru:
     update_profile: 'Редактировать профиль'
     set: 'Организовал:'
     no_events_set: 'Пользователь пока не организовал ни одного события'
+
+  comments:
+    comment:
+      destroy_confirm: 'Вы уверены, что хотите удалить этот комменатрий?'
+    send: 'Отправить'
+    delete: 'Удалить комментарий'
+
+  subscriptions:
+    subscription:
+      destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
+    calls: 'Зовет:'
+    who_goes: 'Пойдут:'
+    i_will_go: 'Я пойду:'
+    delete: 'Удалить подписку'
+    submit: 'Подписаться'

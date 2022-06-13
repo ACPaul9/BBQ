@@ -1,4 +1,4 @@
-<%= form_for [@event, subscription] do |f| %>
+<%= form_for [@event, subscription], data: { turbo: false } do |f| %>
   <%= render partial: 'partials/form_errors', locals: {model: subscription} %>
 
   <% unless user_signed_in? %>
@@ -11,9 +11,11 @@
       <%= f.label :user_email %>
       <%= f.text_field :user_email, class: 'form-control' %>
     </div>
+
   <% end %>
 
-  <div class="actions">
-    <%= f.submit 'Подписаться', class: 'btn btn-primary' %>
-  </div>
+    <div class="actions">
+      <%= f.submit 'Подписаться', class: 'btn btn-primary' %>
+    </div>
+
 <% end %>

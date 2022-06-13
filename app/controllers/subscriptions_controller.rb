@@ -7,6 +7,7 @@ class SubscriptionsController < ApplicationController
 
   def create
     # Болванка для новой подписки
+
     @new_subscription = @event.subscriptions.build(subscription_params)
     @new_subscription.user = current_user
 
