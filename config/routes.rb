@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :subscriptions
   devise_for :users
 
   root to: "events#index"
@@ -10,6 +9,7 @@ Rails.application.routes.draw do
 
     # вложенный ресурс подписок
     resources :subscriptions, only: [:create, :destroy]
+    resources :photos, only: %i[create destroy]
   end
   resources :users, only: [:show, :edit, :update]
 end

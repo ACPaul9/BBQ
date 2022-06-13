@@ -14,6 +14,8 @@ class User < ApplicationRecord
   # Имя не не более 35 символов
   validates :name, presence: true, length: {maximum: 35}
 
+  mount_uploader :avatar, AvatarUploader
+
   private
 
   def set_name
