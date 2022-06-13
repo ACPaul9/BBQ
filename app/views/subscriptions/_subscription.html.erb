@@ -1,4 +1,4 @@
-<span class="subscription">
+<div class="subscription d-flex align-items-center border-bottom border-bottom-1 py-1">
   <% if subscription.user.present? %>
     <%= render partial: 'users/user', object: subscription.user %>
   <% else %>
@@ -11,4 +11,4 @@
           method: :delete,
           form: { data: { turbo_confirm: t('subscriptions.subscription.destroy_confirm') } }, title: t('subscriptions.delete'), class: 'btn btn-outline' )%>
   <% end %>
-</span>
+</div>
