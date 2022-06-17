@@ -13,8 +13,7 @@
 
   <div class="form-group">
     <%= f.label :avatar %>
-    <p><%= image_tag(@user.avatar.thumb.url) if @user.avatar? %></p>
-    <%= f.file_field :avatar %>
+    <%= f.file_field :avatar, class: 'form-control' %>
   </div>
 
   <div class="actions d-flex flex-row align-items-center mt-4 mb-4">

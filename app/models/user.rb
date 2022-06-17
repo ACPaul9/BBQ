@@ -14,7 +14,9 @@ class User < ApplicationRecord
   # Имя не не более 35 символов
   validates :name, presence: true, length: {maximum: 35}
 
-  mount_uploader :avatar, AvatarUploader
+  has_one_attached :avatar do |attachable|
+    attachable.variant :thumb, resize_to_fill: [100, 100]
+  end
 
   private
 
