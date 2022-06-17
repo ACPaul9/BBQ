@@ -9,10 +9,12 @@ gem "rails", "~> 7.0.0"
 gem "image_processing", ">= 1.2"
 gem 'aws-sdk-s3'
 gem "devise"
+gem 'dotenv-rails'
 gem 'rmagick'
 gem "devise-i18n"
 gem "rails-i18n"
 gem "sprockets-rails"
+gem 'mailjet'
 gem "puma", "~> 5.0"
 gem "jsbundling-rails"
 gem "turbo-rails", '~> 1.0.0'
