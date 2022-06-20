@@ -8,6 +8,7 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=<%= ENV["API_YANDEX_MAP_KEY"] %>" type="text/javascript"></script>
   </head>
 
   <body>
