@@ -79,5 +79,4 @@ class EventsController < ApplicationController
       render 'password_form'
     end
   end
-
 end
