@@ -1,6 +1,6 @@
 <div class="event-photo mt-3">
   <a href="<%= photo.photo.url %>" data-lightbox="set">
-    <%= image_tag(photo.photo.variant(:thumb), class: "me-2") %>
+    <%= image_tag(photo.photo.variant(:thumb)) %>
   </a>
 
   Добавил <%= render partial: "users/user", object: photo.user %>
